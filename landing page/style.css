@@ -1,0 +1,153 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  color: #000000;
+  
+}
+
+/* NAVBAR */
+.navbar {
+  background-color: #064c3a;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+.nav-links li {
+  display: inline-block;
+  margin-left: 1rem;
+}
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/* MAIN SECTION */
+.hero {
+  display: flex;
+  flex-direction: column;
+}
+.hero-image {
+    margin-top: 4px;
+   height: 90vh;
+  width: 100%;
+  background-color: #2faf9b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.my-image{
+     background-image: url(khushi-image.jpg);
+     background-size: cover;
+     object-fit: cover;
+     position: relative;
+       box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     height: 300px;
+     width: 300px;
+     border-radius: 50%;
+     margin-left: 2rem;
+}
+.my-image::before {
+  content: "";
+  inset: 0;
+  background-color: rgba(255, 255, 255, 0); /* adjust for more/less white */
+  z-index: 1;
+}
+.hero-content {
+  position: relative;
+  z-index: 1;
+}
+.hero-content h1 {
+  font-size: 4.5rem;
+   font-family: 'Montserrat', sans-serif;
+    font-size: clamp(2.5rem, 5vw, 4.5rem);
+  margin-bottom: .5rem;
+color: rgb(35 108 9);
+}
+.hero-content p {
+  font-size: 3.1rem;
+  font-weight: 700;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 0.4rem;
+  color:#064c3a;
+}
+.btn-primary {
+  display: inline-block;
+  background: #295f2e;
+  color: #fff;
+  padding: 0.6rem 1.2rem;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 1rem;
+}
+.btn-large {
+  font-size: 1.2rem;
+}
+
+/* ABOUT SECTION */
+.about-section {
+   
+  padding: 4rem 2rem;
+  background-color: #28a490;
+  color: #333;
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+.about-section .container {
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
+}
+.about-section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.about-section p {
+  margin-bottom: 1rem;
+  line-height: 1.8;
+}
+
+/* FOOTER */
+footer#contact {
+  background: #064c3a;
+  color: white;
+  text-align: center;
+  padding: 2rem;
+}
+footer#contact a {
+  color: #ffda79;
+  text-decoration: none;
+}
+footer#contact a:hover {
+  text-decoration: underline;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+  }
+  .nav-links {
+    margin: 1rem 0;
+  }
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+  .about-section {
+    padding: 2rem 1rem;
+  }
+}
